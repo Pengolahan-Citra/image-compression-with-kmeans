@@ -1,0 +1,25 @@
+https://towardsdatascience.com/image-compression-using-k-means-clustering-aa0c91bb0eeb#:~:text=An%20overview%20and%20implementation%20of,for%20different%20values%20of%20k&text=Image%20compression%20is%20a%20type,image%20to%20an%20unacceptable%20level.
+
+Image Compression Algorithms memanfaatkan persepsi visual dan sifat statistik data gambar untuk memberikan hasil yang lebih unggul. Ada dua jenis metode kompresi gambar - lossless vs lossy. Mari kita lihat keduanya.
+
+Lossless compression:
+Ini adalah metode yang digunakan untuk mengurangi ukuran file dengan tetap mempertahankan kualitas yang sama seperti sebelum file dikompresi . Kompresi lossless tidak mengurangi kualitas data dan file dapat dikembalikan ke bentuk aslinya. Ukuran file tidak berubah dalam jenis kompresi ini. Algoritma yang digunakan untuk kompresi lossless adalah:
+-Run Length encoding
+-Huffman Coding
+-Arithmetic Coding
+
+Lossy Compression:
+metode kompresi yang menghilangkan data yang tidak terlihat. Untuk memberikan ukuran foto yang lebih kecil, kompresi lossy membuang beberapa bagian foto yang kurang penting. File terkompresi tidak dapat dikembalikan ke bentuk aslinya yang tepat. Dalam jenis kualitas data kompresi ini dikompromikan dan ukuran data berubah. Kompresi lossy digunakan terutama untuk gambar, audio dan, kompresi video dan algoritma kompresi lossy yang berbeda adalah:
+-Discrete Cosine Transform
+-Fractal compression
+-Transform Coding
+
+Apa itu K-Means Clustering?
+teknik Clustering berbasis Centroid. Centroid kaya mencari titik tengah dari K-Cluster tersebut
+
+
+Bagaimana teknik K-Means Clustering memampatkan gambar?
+setiap piksel berukuran 3 byte (RGB), dimana setiap warna dapat memiliki nilai intensitas dari 0 hingga 255
+jumlah warna yang dapat direpresentasikan adalah 256 * 256 * 256 (setara dengan 16.777.216). Jadi algoritme K-Means Clustering memanfaatkan persepsi visual mata manusia dan menggunakan sedikit warna untuk mewakili gambar. Warna yang memiliki nilai intensitas berbeda dengan nilai RGB tampak sama di mata manusia. Algoritme K-Means menggunakan ini dan memadukan warna yang tampak serupa (yang berdekatan dalam satu cluster).
+
+
